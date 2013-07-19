@@ -45,6 +45,7 @@ app.get('/account', site.account);
 app.get('/dialog/authorize', oauth2.authorization);
 app.post('/dialog/authorize/decision', oauth2.decision);
 app.post('/oauth/token', oauth2.token);
+app.get('/oauth/token', site.token);
 
 app.get('/api/userinfo', user.info);
 
